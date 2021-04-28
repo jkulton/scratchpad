@@ -32,12 +32,13 @@ div {
 textarea {
   width: 100%;
   padding: 1rem;
-  font-size: 19px;
+  font-size: 16px;
   border: 1px solid #ececec;
   border-radius: 4px;
   margin: 0 auto;
   min-height: 450px;
   resize: vertical;
+  font-family: 'Fira Code', 'Menlo', monospace;
 }
 
 textarea:focus {
@@ -50,4 +51,20 @@ textarea:focus {
   position: absolute;
   bottom: -28px;
   left: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #24292d;
+  }
+
+  body textarea {
+    color: #ffffff;
+    background: #1d2026;
+    border-color: #141418;
+  }
+
+  body textarea:focus {
+    outline: none;
+  }
 }
